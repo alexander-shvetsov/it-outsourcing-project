@@ -1,0 +1,97 @@
+section.price
+	.container
+		.price-head
+			h2.h2 Цены
+			p Пожалуйста, выберите интересующее Вас направление
+		.price-content
+			//- item
+			.price-content__item.price-item__grey
+				.price-item__image
+					img(src='/static/images/officeMini.svg' alt='Мини офис')
+				.price-item__head
+					h3.h3 «Мини офис»
+				.price-item__content
+					p
+						| до 8 рабочих станций
+						br
+						| до 2 серверов
+						br
+						| телефония / интернет
+				.price-item__action
+					a.link.link-black.popup-with-zoom-anim(href='#form-price-dialog' data-form='Услуга «Мини офис»' data-text='до 8 рабочих станций, до 2 серверов, телефония / интернет')
+						| 14000 руб./мес
+						+icon('right-arrow')
+			//- item
+			.price-content__item.price-item__blue
+				.price-item__image
+					img(src='/static/images/officeStandart.png' alt='Офис стандарт')
+				.price-item__head
+					h3.h3 «Офис стандарт»
+				.price-item__content
+					p
+						| до 20 рабочих станций
+						br
+						| до 5 серверов
+						br
+						| телефония / интернет
+				.price-item__action
+					a.link.link-white.popup-with-zoom-anim(href='#form-price-dialog' data-form='Услуга «Офис стандарт»' data-text='до 20 рабочих станций, до 5 серверов, телефония / интернет')
+						| 32000 руб./мес
+						+icon('right-arrow')
+			//- item
+			.price-content__item.price-item__red
+				.price-item__image
+					img(src='/static/images/officeProfessional.png' alt='Профессиональный')
+				.price-item__head
+					h3.h3 «Профессиональный»
+				.price-item__content
+					p Специализированная задача в IT. Мы можем подготовить для Вас уникальное предложение.
+				.price-item__action
+					a.link.link-white.popup-with-zoom-anim(href='#form-task-dialog' data-form='Услуга «Профессиональный»' data-text='Специализированная задача в IT. Мы можем подготовить для Вас уникальное предложение.')
+						| Цена договорная
+						+icon('right-arrow')
+			//- item
+			.price-content__item.price-item__purple
+				.price-item__image
+					img(src='/static/images/buch.png' alt='Бухгалтерия и торговля')
+				.price-item__head
+					h3.h3 Бухгалтерия и торговля
+				.price-item__content
+					p 1С: Бухгалтерия, 1С: Управление торговлей, 1С: ЗУП, Розница, другие специализированные конфигурации.
+				.price-item__action
+					a.link.link-white.popup-with-zoom-anim(href='#form-price-dialog' data-form='Бухгалтерия и торговля' data-text='Бухгалтерия, 1С: Управление торговлей, 1С: ЗУП, Розница, и другие конфигурации.')
+						| Цена договорная
+						+icon('right-arrow')
+			//- item
+			.price-content__item.price-item__grey
+				.price-item__image
+					img(src='/static/images/webSite.png' alt='Корпоративный сайт')
+				.price-item__head
+					h3.h3 Корпоративный сайт
+				.price-item__content
+					p
+						| Уникальный дизайн сайта
+						br
+						| Поддержка мобильных устройств
+						br
+						| Базовая SEO-оптимизация
+				.price-item__action
+					a.link.link-black.popup-with-zoom-anim(href='#form-price-dialog' data-form='Услуга «Корпоративный сайт»' data-text='Разработать уникальный дизайн сайта с поддержкой мобильных устройств')
+						| от 25000 рублей
+						+icon('right-arrow')
+			//- item
+			.price-content__item.price-item__blue
+				.price-item__image
+					img(src='/static/images/eCommerce.png' alt='Интернет-магазин')
+				.price-item__head
+					h3.h3 Интернет-магазин
+				.price-item__content
+					p Высокопроизводительные интернет-магазины для тысяч различных наименований.
+				.price-item__action
+					a.link.link-white.popup-with-zoom-anim(href='#form-price-dialog' data-form='Запуск интернет-магазина' data-text='Высокопроизводительный интернет-магазин для тысяч различных наименований.')
+						| от 35000 рублей
+						+icon('right-arrow')
+		.price-action
+			a.btn.btn-primary.popup-with-zoom-anim(href='#form-task-dialog' data-form='Консультация' data-text='Пожалуйста, опишите в свободной форме, какую задачу необходимо решить?')
+				| Консультация
+				+icon('right-arrow')

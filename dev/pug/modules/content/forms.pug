@@ -1,0 +1,68 @@
+.zoom-anim-dialog.mfp-hide#form-dialog
+	.form-head
+		.form-head__title Вам удобнее перезвонить?
+		.form-head__description Пожалуйста, оставьте свои контактные данные. Это конфиденциально.
+	.form-content
+		form
+			//-
+			input(type='hidden' name='project_name' value='IT-аутсорсинг')
+			input(type='hidden' name='admin_email' value='info@1malex.ru')
+			input(type='hidden' name='form_subject' value='Обратный звонок с сайта www.1malex.ru')
+			input(type='hidden' name='form-data__title')
+			input(type='hidden' name='form-data__description')
+			//-
+			.form-content__input
+				label(for='user_name') Представьтесь пожалуйста
+				input#user_name(type='text' name='Имя:' placeholder='Например: Александр')
+			.form-content__input
+				label(for='phone_number') Контактный телефон
+				input#phone_number(type='tel' name='Телефон:' minlength='7' placeholder='+7 (___) ___-__-__' required='')
+			.form-content__button
+				button.btn.btn-form Отправить
+
+.zoom-anim-dialog.mfp-hide#form-task-dialog
+	.form-head
+		.form-head__title Опишите задачу
+		.form-head__description Пожалуйста, опишите в свободной форме, что необходимо сделать?
+	.form-content
+		form
+			//-
+			input(type='hidden' name='project_name' value='IT-аутсорсинг')
+			input(type='hidden' name='admin_email' value='info@1malex.ru')
+			input(type='hidden' name='form_subject' value='Заявка на консультацию с сайта www.1malex.ru')
+			input(type='hidden' name='form-data__title')
+			input(type='hidden' name='form-data__description')
+			//-
+			.form-content__input
+				label(for='user_name') Представьтесь пожалуйста
+				input#user_name(type='text' name='Имя:' placeholder='Например: Александр')
+			.form-content__input
+				label(for='phone_number2') Контактный телефон
+				input#phone_number(type='tel' name='Телефон:' minlength='7' placeholder='+7 (___) ___-__-__' required='')
+			.form-content__input
+				label(for='task_area') Задача
+				textarea#task_area(rows='6' name='Задача:' placeholder='Например: Необходимо обслуживание компьютерной техники. Организация сервера хранения данных. Интеграция программ: 1С' required='')
+			.form-content__button
+				button.btn.btn-form Отправить
+
+.zoom-anim-dialog.mfp-hide#form-price-dialog
+	.form-head
+		.form-head__title formTitle
+		.form-head__description formDescription
+	.form-content
+		form
+			//-
+			input(type='hidden' name='project_name' value='IT-аутсорсинг')
+			input(type='hidden' name='admin_email' value='info@1malex.ru')
+			input(type='hidden' name='form_subject' value='Заявка с сайта www.1malex.ru')
+			input(type='hidden' name='form-data__title')
+			input(type='hidden' name='form-data__description')
+			//-
+			.form-content__input
+				label(for='user_name') Представьтесь пожалуйста
+				input#user_name(type='text' name='Имя:' placeholder='Например: Александр')
+			.form-content__input
+				label(for='phone_number2') Контактный телефон
+				input#phone_number(type='tel' name='Телефон:' minlength='7' placeholder='+7 (___) ___-__-__' required='')
+			.form-content__button
+				button.btn.btn-form Отправить

@@ -1,0 +1,36 @@
+.services {
+	margin-top: 50px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+.services-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+.services-content__item {
+	margin-top: 25px;
+	max-width: 360px;
+}
+
+.services-item__head .h3 {
+	font-size: rem(18px);
+}
+
+.services-item__content {
+	margin-top: 20px;
+}
+
+.services-item__icon {
+	.svg-sprite-icon {
+		fill: $grey !important;
+		width: 80px;
+		min-height: 80px;
+		max-height: 120px;
+	}
+}
+
+.services-action {
+	margin-top: 70px;
+}

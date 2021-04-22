@@ -1,0 +1,143 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+html {
+	font-size: ($base-font-size / 16px) * 100%;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: $lightGrey;
+	color: $blackText;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: 'ProximaNova__Regular', sans-serif;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 900; }
+
+h1, .h1 {
+	font-family: "GothamPro__Bold", sans-serif;
+	font-size: rem(48px);
+	line-height: 1.4;
+	color: $black;
+}
+
+h2, .h2 {
+	font-family: "GothamPro__Bold", sans-serif;
+	font-size: rem(38px);
+	line-height: 1.4;
+	color: $black;
+}
+
+h3, .h3 {
+	font-family: "GothamPro__Bold", sans-serif;
+	font-size: rem(30px);
+	line-height: 1.4;
+	color: $black;
+}
+
+h4, .h4 {
+	font-family: "GothamPro__Bold", sans-serif;
+	font-size: rem(24px);
+	line-height: 1.4;
+	color: $black;
+}
+
+ul {
+	list-style-type: inherit;
+	margin: 10px;
+	padding: 0;
+}
+
+ol {
+	margin: 10px;
+	padding: 0;
+}
+
+li {
+	margin-left: 1.7em;
+	padding-left: 4px;
+}
+
+a { text-decoration: none; }
+
+p { margin: 0; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { resize: none; }
+
+section { position: relative; }
+
+a,
+input,
+select,
+button,
+details,
+summary { outline: none; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.content { flex: 1 0 auto; }
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: $content-size;
+	width: 100%;
+}
+
+.container-fluid {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.white-block {
+	background-color: #ffffff;
+	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	padding: 30px 15px;
+	margin: 40px 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.jconfirm-content p {
+	margin-top: 10px;
+	font-size: rem(14px);
+}
+
+.jc-bs3-container {
+	max-width: 650px;
+}
+
+@import "modules/modules";
+@import "utils/media";

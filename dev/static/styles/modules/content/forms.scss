@@ -1,0 +1,183 @@
+textarea,
+textarea::placeholder,
+input[type="text"],
+input[type="text"]::placeholder,
+input[type="tel"],
+input[type="tel"]::placeholder {
+	color: #AAB6CD;
+	font-family: "ProximaNova__Regular", sans-serif;
+	font-size: rem(14px);
+}
+
+#form-dialog,
+#form-task-dialog,
+#form-price-dialog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #e3ebf7;
+	background: #3E5D94;
+	text-align: left;
+	width: 100%;
+	max-width: 380px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 12px;
+	padding: 40px 30px;
+}
+
+.form-head {
+	text-align: center;
+	&__title {
+		font-weight: bold;
+		font-size: rem(20px);
+	}
+	&__description {
+		max-width: 270px;
+		position: relative;
+		font-weight: 300;
+		font-size: rem(12px);
+		&::after {
+			content: "";
+			position: absolute;
+			top: 47px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 300px;
+			height: 1px;
+			background: darken(#e3ebf7, 30%);
+			opacity: 0.3;
+		}
+	}
+}
+
+.form-content {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.form-content__input {
+	margin-top: 20px;
+	label {
+		display: inline-block;
+		margin-bottom: 5px;
+		font-family: "GothamPro__Bold", sans-serif;
+		font-weight: bold;
+		font-size: rem(13px);
+	}
+	input, textarea {
+		color: #AAB6CD;
+		width: 100%;
+		background-color: #2D4575;
+		padding: 15px 25px;
+		border-radius: 4px;
+		transition: all .3s ease-in;
+		&:hover, &:focus {
+			background-color: lighten(#2D4575, 3%);
+		}
+	}
+}
+
+.form-content__button {
+	margin-top: 35px;
+}
+
+.mfp-close-btn-in .mfp-close {
+	color: #ffffff !important;
+}
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.95 !important;
+}
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	transform: scale(0.8);
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+/**
+ * Fade-move animation for second dialog
+ */
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	transition: all 0.2s ease-out;
+	transform: translateY(-20px) perspective(600px) rotateX(10deg);
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	transform: translateY(0) perspective(600px) rotateX(0);
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+	transform: translateY(-10px) perspective(600px) rotateX(10deg);
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+	transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+	opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}

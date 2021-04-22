@@ -1,0 +1,27 @@
+// Colors
+$white:        #fff;
+$black:        #0c0c0c;
+$grey:         #bcbcbc;
+$lightGrey:    #fcfcfc;
+$blue:         #2E32AF;
+$lightBlue:    #4062C5;
+$darkBlue:     #22233b;
+$blackText:    #595959;
+$whiteText:    #f7fafc;
+// Sizes
+$base-font-size: 16px;
+
+$breakpoints: (
+  "phone"       : 400px,
+  "phone-wide"  : 480px,
+  "phablet"     : 560px,
+  "tablet-small": 640px,
+  "tablet"      : 768px,
+  "tablet-wide" : 1024px,
+  "desktop"     : 1248px,
+  "desktop-wide": 1440px
+);
+
+$content-size: 1200px;
+
+// Fonts

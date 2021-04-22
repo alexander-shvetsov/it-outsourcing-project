@@ -1,0 +1,99 @@
+.price {
+	margin-top: 20px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.price-head {
+	.h2 {
+		font-size: rem(30px);
+	}
+	p {
+		font-size: rem(20px);
+		padding: 10px 0;
+	}
+}
+
+.price-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.price-content__item {
+	margin-top: 45px;
+	width: 360px;
+	border-radius: 4px;
+	.price-item__head .h3 {
+		margin-top: 35px;
+		font-size: rem(20px);
+	}
+	.price-item__content {
+		margin-top: 25px;
+		padding: 0 25px;
+	}
+	.price-item__image {
+		margin-top: 40px;
+	}
+	.price-item__image img {
+		display: inline-block;
+		width: auto;
+		max-height: 200px;
+	}
+	.price-item__action {
+		margin: 20px 0 40px 0;
+	}
+}
+
+.price-action {
+	margin-top: 60px;
+}
+
+.price-item__grey {
+	background: rgb(233, 233, 233);
+	background: linear-gradient(
+		135deg,
+		rgba(233, 233, 233, 1) 0%,
+		rgba(243, 243, 243, 1) 100%
+	);
+}
+
+.price-item__blue {
+	background: rgb(51, 160, 214);
+	background: linear-gradient(
+		135deg,
+		rgba(51, 160, 214, 1) 0%,
+		rgba(46, 144, 191, 1) 100%
+	);
+	color: $white;
+	.h3 {
+		color: $white;
+	}
+}
+
+.price-item__red {
+	background: rgb(233, 65, 90);
+	background: linear-gradient(
+		135deg,
+		rgba(233, 65, 90, 1) 0%,
+		rgba(210, 59, 81, 1) 100%
+	);
+	color: $white;
+	.h3 {
+		color: $white;
+	}
+}
+
+.price-item__purple {
+	background: rgb(96, 84, 157);
+	background: linear-gradient(
+		321deg,
+		rgba(96, 84, 157, 1) 0%,
+		rgba(129, 111, 200, 1) 100%
+	);
+	color: $white;
+	.h3 {
+		color: $white;
+	}
+}

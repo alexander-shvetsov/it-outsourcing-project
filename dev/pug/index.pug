@@ -1,0 +1,35 @@
+extends template/main
+
+block variables
+	- var title = 'Услуги аутсорсинга в Екатеринбурге';
+	- var description = 'Комплексный сервис компьютерной поддержки по договору в Екатеринбурге. Сопровождение компьютеров, серверов, СКС и бухгалтерии 1С';
+	- var pageClass = 'indexPage';
+	- var ogTitle = 'Услуги аутсорсинга в Екатеринбурге';
+	- var ogDescription = 'Комплексный сервис компьютерной поддержки по договору в Екатеринбурге. Сопровождение компьютеров, серверов, СКС и бухгалтерии 1С';
+	- var ogUrl = 'https://1malex.ru';
+
+block content
+	main.promo
+		.container
+			.promo-title
+				.promo-title__head
+					h1.h1
+						| Профессиональный IT-аутсорсинг
+						br
+						| в Екатеринбурге
+					p Мы работаем — Вы зарабатываете.
+					a.btn.btn-primary.popup-with-zoom-anim(href='#form-task-dialog' data-form='Опишите задачу' data-text='Пожалуйста, опишите в свободной форме, какую задачу необходимо решить?')
+						| Опишите задачу
+						+icon('right-arrow')
+				.promo-title__image
+					img(src='/static/images/topAsset__compressed.svg' alt='promoImage')
+	section.special
+		.container
+			.special-content.white-block
+				.special-content__head
+					h2.h2 Наша специализация
+				.special-content__works
+					p Обслуживание компьютеров, серверов и другой периферии. Монтаж компьютерных сетей. Обслуживание 1С бухгалтерии. Подключение и настройка IP телефонии. Разработка сайтов для компании любой сложности: сайт-визитка, корпоративный сайт, интернет-магазины. Интернет-реклама: Yandex, Google, социальные сети.
+	//- includes
+	include modules/content/services
+	include modules/content/price

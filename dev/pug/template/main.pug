@@ -1,0 +1,46 @@
+- function pDate() {
+	- return new Date().getTime();
+- }
+
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset='utf-8')
+		title #{title}
+		meta(name="description", content=description)
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png")
+		link(rel="icon" type="image/png" href="/static/images/favicon/icon-128x128.png")
+		link(rel="manifest", href="/static/images/favicon/manifest.json")
+		meta(name='theme-color' content='#2e32af')
+		meta(name='apple-mobile-web-app-status-bar' content='#2e32af')
+		meta(property='og:type' content='profile')
+		meta(property='og:title' content=`${ogTitle}`)
+		meta(property='og:description' content=`${ogDescription}`)
+		meta(property='og:url' content=`${ogUrl}`)
+		link(rel="stylesheet" type='text/css' href="/static/css/styles.min.css?v" + pDate())
+
+		<!--[if lt IE 9]>
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+		script.
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('main');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+		<![endif]-->
+	body(class=pageClass)
+		.wrapper
+			include ../modules/header/header
+			block content
+			include ../modules/footer/footer
+			include ../modules/content/forms
+		script(src="/static/js/jquery-3.3.1.min.js")
+		script(src="/static/js/libs.min.js?v" + pDate())
+		script(src="/static/js/main.min.js?v" + pDate())
+		block script

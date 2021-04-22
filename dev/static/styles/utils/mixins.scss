@@ -1,0 +1,15 @@
+@mixin size($a,$b: $a) {
+  width: $a;
+  height: $b;
+}
+
+@function rem($size) {
+  @return $size / $base-font-size * 1rem;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}

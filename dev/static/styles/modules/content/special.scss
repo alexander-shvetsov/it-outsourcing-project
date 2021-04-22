@@ -1,0 +1,32 @@
+.special {
+	margin-top: -100px;
+}
+.special-content {
+	padding: 60px 0;
+	text-align: center;
+}
+.special-content__head {
+	padding-bottom: 15px;
+	position: relative;
+	&::after {
+		margin-top: 20px;;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		content: "";
+		display: block;
+		width: 60px;
+		height: 4px;
+		background-color: $blue;
+	}
+	.h2 {
+		font-size: rem(34px);
+	}
+}
+.special-content__works {
+	width: 68%;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: rem(18px);
+	line-height: 1.85;
+}

@@ -1,0 +1,74 @@
+.btn {
+	display: inline-block;
+	font-family: "GothamPro__Bold", sans-serif;
+	font-size: rem(20px);
+	border-radius: 4px;
+	&:hover {
+		.icon-right-arrow {
+			transition: all 0.5s ease-in-out;
+			transform: translateX(8px);
+		}
+	}
+}
+
+.btn-primary {
+	background: $black;
+	padding: 20px 30px;
+	color: $whiteText;
+	padding-bottom: 22px;
+	transition: all 0.5s ease-in;
+	.icon-right-arrow {
+		margin-left: 5px;
+		fill: $whiteText;
+		width: 20px;
+		height: 15px;
+	}
+	&:hover {
+		background: darken($blue, 30%);
+	}
+}
+
+.btn-form {
+	cursor: pointer;
+	color: #ffffff;
+	background: #FD6574;
+	padding: 15px 25px;
+	border-bottom: 4px solid darken(#FD6574, 4%);
+	transition: all .3s ease-in;
+	&:hover {
+		background: darken(#FD6574, 4%);
+		border-bottom: 4px solid darken(#FD6574, 7%);
+	}
+}
+
+.link {
+	display: inline-block;
+	font-family: "GothamPro__Bold", sans-serif;
+	font-size: rem(20px);
+	&:hover {
+		.icon-right-arrow {
+			transition: all 0.5s ease-in-out;
+			transform: translateX(8px);
+		}
+	}
+}
+
+.link-black {
+	color: $black;
+	.icon-right-arrow {
+		margin-left: 5px;
+		fill: $black;
+		width: 20px;
+		height: 15px;
+	}
+}
+
+.link-white {
+	color: $white;
+	.icon-right-arrow {
+		margin-left: 5px;
+		fill: $white;
+		width: 20px;
+		height: 15px;
+	}
+}

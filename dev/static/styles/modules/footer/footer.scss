@@ -1,0 +1,107 @@
+footer {
+	flex: 0 0 auto;
+}
+
+.footer-top {
+	background-color: #f2f3f7;
+}
+
+.footer-content {
+	padding: 70px 0 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	ul,
+	li {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.footer-logo {
+	.icon-logoBlack {
+		width: 161px;
+		height: 42px;
+		fill: $darkBlue;
+	}
+}
+
+.footer-company {
+	margin-top: 10px;
+	max-width: 220px;
+	font-size: rem(14px);
+	color: $grey;
+}
+
+.footer-phone {
+	margin-top: 10px;
+	align-items: center;
+	a {
+		position: relative;
+		font-family: "GothamPro__Bold", sans-serif;
+		font-size: rem(20px);
+		color: $darkBlue;
+		&::before {
+			position: absolute;
+			top: -5px;
+			left: 0;
+			content: "";
+			width: 40px;
+			height: 40px;
+			background: rgb(255, 255, 255);
+			background: linear-gradient(
+				131deg,
+				rgba(255, 255, 255, 1) 0%,
+				rgba(242, 243, 247, 1) 100%
+			);
+			border-radius: 50%;
+			opacity: 0.8;
+		}
+		.icon-phone-call {
+			width: 16px;
+			height: 16px;
+			fill: $black;
+			margin: 0 20px 0 12px;
+		}
+	}
+}
+
+.footer-nav__head {
+	.h4 {
+		font-size: rem(20px);
+		color: $darkBlue;
+	}
+}
+
+.footer-nav__menu {
+	margin-top: 22px;
+	li {
+		margin-top: 4px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	a {
+		font-size: rem(14px);
+		color: $blackText;
+	}
+}
+
+.footer-bottom {
+	background-color: #fff;
+	padding: 15px 0;
+	color: #8f8f8f;
+	font-size: rem(12px);
+	opacity: 0.7;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.footer-bottom__policy {
+	a {
+		color: $darkBlue;
+	}
+}

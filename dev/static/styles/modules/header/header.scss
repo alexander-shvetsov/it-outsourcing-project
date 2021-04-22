@@ -1,0 +1,70 @@
+.header {
+	position: relative;
+	.container {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.header-content {
+	padding-top: 50px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.icon-logo {
+		width: 149px;
+		height: 38px;
+		fill: #7ca8fe;
+	}
+
+	.header-content__contacts {
+		margin-right: 80px;
+		text-align: right;
+		line-height: 1.3;
+
+		.contacts-phone a {
+			font-family: "GothamPro__Bold";
+			font-size: rem(24px);
+			color: $whiteText;
+		}
+
+		.contacts-time {
+			font-family: "GothamPro__Bold";
+			font-size: rem(16px);
+			color: #7ca8fe;
+		}
+	}
+
+	.header-content__callback {
+		position: absolute;
+		top: 50px;
+		right: 0;
+		width: 55px;
+		height: 55px;
+		background-color: #324798;
+		border-radius: 4px;
+		transition: background-color 0.3s ease-out;
+		&:hover {
+			background-color: darken(#324798, 7%);
+		}
+
+		a {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		.icon-phone-call {
+			fill: $whiteText;
+			width: 25px;
+			height: 25px;
+		}
+	}
+}

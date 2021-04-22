@@ -1,0 +1,43 @@
+.promo {
+	min-height: 750px;
+	background: rgb(46, 50, 175);
+	background: linear-gradient(
+		52deg,
+		rgba(46, 50, 175, 1) 30%,
+		rgba(68, 108, 202, 1) 100%
+	);
+}
+
+.promo-title {
+	margin-top: 220px;
+	display: flex;
+	color: $whiteText;
+}
+
+.promo-title__head {
+	width: 50%;
+	.h1 {
+		color: $whiteText;
+		max-width: 550px;
+		font-size: rem(48px);
+	}
+	p {
+		margin-top: 20px;
+		font-family: "ProximaNova__Light", sans-serif;
+		font-size: rem(24px);
+	}
+	a {
+		display: inline-block;
+		margin-top: 40px;
+	}
+}
+
+.promo-title__image {
+	width: 50%;
+	text-align: right;
+}
+
+.promo-title__image img {
+	max-width: 550px;
+	height: auto;
+}

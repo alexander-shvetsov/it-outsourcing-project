@@ -1,0 +1,13 @@
+header.header
+	.container
+		.header-content
+			.header-content__logo
+				a(href='/' title='На главную')
+					+icon('logo')
+			.header-content__contacts
+				.contacts-phone
+					a(href='tel:+79222046439' title='Контактный телефон') +7 (922) 204-64-39
+				.contacts-time консультация с 8:00 до 22:00
+			.header-content__callback
+				a.popup-with-zoom-anim(href='#form-dialog' title='Вам перезвонить?' data-form='Вам удобнее перезвонить?' data-text='Пожалуйста, оставьте свои контактные данные. Это конфиденциально.')
+					+icon('phone-call')
